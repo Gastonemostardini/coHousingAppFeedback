@@ -1,0 +1,88 @@
+name: "🐛 Bug Report"
+description: Segnala un malfunzionamento o un errore riscontrato durante il test dell'app
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per il tuo aiuto nel testare l'app! Compila i campi sottostanti con più dettagli possibile per aiutarci a riprodurre e correggere il problema.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrizione del problema
+      description: Cosa non funziona come dovrebbe?
+      placeholder: Descrivi il bug in modo chiaro e conciso
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passi per riprodurre
+      description: Come possiamo riprodurre il problema?
+      placeholder: |
+        1. Vai su '...'
+        2. Clicca su '...'
+        3. Scorri fino a '...'
+        4. Compare l'errore
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento atteso
+      description: Cosa ti aspettavi che succedesse?
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamento osservato
+      description: Cosa è successo invece?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Piattaforma
+      options:
+        - iOS
+        - Android
+        - Web (Desktop)
+        - Web (Mobile)
+        - Altro
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Versione dell'app (se nota)
+      placeholder: es. 1.2.3
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Gravità
+      options:
+        - Bassa (fastidio minore)
+        - Media (impatta l'uso ma esiste un workaround)
+        - Alta (funzionalità importante non utilizzabile)
+        - Bloccante (l'app è inutilizzabile / crash)
+    validations:
+      required: true
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshot o allegati
+      description: Trascina qui screenshot, video o log utili (opzionale)
+    validations:
+      required: false
