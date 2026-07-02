@@ -1,88 +1,88 @@
 name: "🐛 Bug Report"
-description: Segnala un malfunzionamento o un errore riscontrato durante il test dell'app
+description: Report a malfunction or error encountered while testing the app
 title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Grazie per il tuo aiuto nel testare l'app! Compila i campi sottostanti con più dettagli possibile per aiutarci a riprodurre e correggere il problema.
+        Thanks for helping test the app! Please fill in the fields below with as much detail as possible to help us reproduce and fix the issue.
 
   - type: textarea
     id: description
     attributes:
-      label: Descrizione del problema
-      description: Cosa non funziona come dovrebbe?
-      placeholder: Descrivi il bug in modo chiaro e conciso
+      label: Problem description
+      description: What isn't working as expected?
+      placeholder: Describe the bug clearly and concisely
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: Passi per riprodurre
-      description: Come possiamo riprodurre il problema?
+      label: Steps to reproduce
+      description: How can we reproduce the issue?
       placeholder: |
-        1. Vai su '...'
-        2. Clicca su '...'
-        3. Scorri fino a '...'
-        4. Compare l'errore
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. The error appears
     validations:
       required: true
 
   - type: textarea
     id: expected
     attributes:
-      label: Comportamento atteso
-      description: Cosa ti aspettavi che succedesse?
+      label: Expected behavior
+      description: What did you expect to happen?
     validations:
       required: false
 
   - type: textarea
     id: actual
     attributes:
-      label: Comportamento osservato
-      description: Cosa è successo invece?
+      label: Actual behavior
+      description: What happened instead?
     validations:
       required: false
 
   - type: dropdown
     id: platform
     attributes:
-      label: Piattaforma
+      label: Platform
       options:
         - iOS
         - Android
         - Web (Desktop)
         - Web (Mobile)
-        - Altro
+        - Other
     validations:
       required: true
 
   - type: input
     id: version
     attributes:
-      label: Versione dell'app (se nota)
-      placeholder: es. 1.2.3
+      label: App version (if known)
+      placeholder: e.g. 1.2.3
     validations:
       required: false
 
   - type: dropdown
     id: severity
     attributes:
-      label: Gravità
+      label: Severity
       options:
-        - Bassa (fastidio minore)
-        - Media (impatta l'uso ma esiste un workaround)
-        - Alta (funzionalità importante non utilizzabile)
-        - Bloccante (l'app è inutilizzabile / crash)
+        - Low (minor annoyance)
+        - Medium (affects usage but a workaround exists)
+        - High (important feature unusable)
+        - Blocking (app is unusable / crashes)
     validations:
       required: true
 
   - type: textarea
     id: attachments
     attributes:
-      label: Screenshot o allegati
-      description: Trascina qui screenshot, video o log utili (opzionale)
+      label: Screenshots or attachments
+      description: Drag and drop screenshots, videos, or useful logs here (optional)
     validations:
       required: false

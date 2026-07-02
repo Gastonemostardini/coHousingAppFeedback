@@ -1,48 +1,48 @@
-name: "💬 Feedback generale"
-description: Condividi impressioni, difficoltà d'uso o osservazioni non legate a un bug specifico
+name: "💬 General Feedback"
+description: Share impressions, usability issues, or observations not related to a specific bug
 title: "[Feedback]: "
 labels: ["feedback"]
 body:
   - type: markdown
     attributes:
       value: |
-        Grazie per il tuo feedback! Aiutaci a capire la tua esperienza con l'app.
+        Thanks for your feedback! Help us understand your experience with the app.
 
   - type: dropdown
     id: type
     attributes:
-      label: Tipo di feedback
+      label: Feedback type
       options:
-        - UX / Usabilità
-        - Contenuti / testi
+        - UX / Usability
+        - Content / copy
         - Performance
-        - Design grafico
-        - Altro
+        - Visual design
+        - Other
     validations:
       required: true
 
   - type: textarea
     id: description
     attributes:
-      label: Descrizione
-      description: Raccontaci la tua esperienza o osservazione
-      placeholder: Cosa hai notato? Cosa ha funzionato bene o male?
+      label: Description
+      description: Tell us about your experience or observation
+      placeholder: What did you notice? What worked well or poorly?
     validations:
       required: true
 
   - type: input
     id: area
     attributes:
-      label: Area dell'app interessata
-      description: Quale schermata o funzionalità riguarda questo feedback?
-      placeholder: es. Onboarding, Profilo, Ricerca alloggi...
+      label: Affected area of the app
+      description: Which screen or feature does this feedback relate to?
+      placeholder: e.g. Onboarding, Profile, Housing search...
     validations:
       required: false
 
   - type: textarea
     id: suggestions
     attributes:
-      label: Suggerimenti
-      description: Hai idee su come migliorare?
+      label: Suggestions
+      description: Any ideas on how to improve?
     validations:
       required: false

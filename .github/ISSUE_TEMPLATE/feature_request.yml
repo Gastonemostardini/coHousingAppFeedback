@@ -1,43 +1,43 @@
-name: "✨ Richiesta di funzionalità"
-description: Proponi una nuova funzionalità o un miglioramento per l'app
+name: "✨ Feature Request"
+description: Propose a new feature or improvement for the app
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Hai un'idea per migliorare l'app? Raccontacela!
+        Have an idea to improve the app? Tell us about it!
 
   - type: textarea
     id: description
     attributes:
-      label: Descrizione della funzionalità
-      description: Cosa vorresti che l'app facesse?
-      placeholder: Descrivi la funzionalità che proponi
+      label: Feature description
+      description: What would you like the app to do?
+      placeholder: Describe the feature you're proposing
     validations:
       required: true
 
   - type: textarea
     id: motivation
     attributes:
-      label: Problema che risolve / motivazione
-      description: Perché questa funzionalità sarebbe utile? Che problema risolve?
-      placeholder: es. "Attualmente è difficile fare X perché..."
+      label: Problem it solves / motivation
+      description: Why would this feature be useful? What problem does it solve?
+      placeholder: e.g. "Currently it's hard to do X because..."
     validations:
       required: true
 
   - type: textarea
     id: solution
     attributes:
-      label: Soluzione proposta
-      description: Hai già un'idea di come potrebbe funzionare?
+      label: Proposed solution
+      description: Do you already have an idea of how it could work?
     validations:
       required: false
 
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternative considerate
-      description: Ci sono altri modi per risolvere lo stesso problema che hai considerato?
+      label: Alternatives considered
+      description: Are there other ways to solve the same problem that you've considered?
     validations:
       required: false
